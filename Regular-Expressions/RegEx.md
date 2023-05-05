@@ -33,9 +33,9 @@ So, putting it all together, this regular expression matches an email address wi
 
 - <a href="#Boundaries">Boundaries</a>
 
-<a href="#Back-references">Back-references</a>
+- <a href="#Back-references">Back-references</a>
 
-<a href="#Look-ahead-and-Look-behind">Look-ahead and Look-behind</a>
+- <a href="#Look-ahead-and-Look-behind">Look-ahead and Look-behind</a>
 
 
 <a id="Anchors">Anchors</a>

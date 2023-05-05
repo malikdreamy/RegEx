@@ -16,15 +16,25 @@ So, putting it all together, this regular expression matches an email address wi
 Table of Contents
 
 Anchors
+
 Quantifiers
+
 OR Operator
+
 Character Classes
+
 Flags
+
 Grouping and Capturing
+
 Bracket Expressions
+
 Greedy and Lazy Match
+
 Boundaries
+
 Back-references
+
 Look-ahead and Look-behind
 
 Regex Components

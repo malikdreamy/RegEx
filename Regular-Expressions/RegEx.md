@@ -58,11 +58,17 @@ console.log(result); // true
 
 Quantifiers are used to specify the number of times a character or a group of characters should be matched. There are several types of quantifiers in regex:
 "*" - matches zero or more occurrences of the preceding character or group.
+
 "+" - matches one or more occurrences of the preceding character or group.
+
 "?" - matches zero or one occurrence of the preceding character or group.
+
 "{n}" - matches exactly n occurrences of the preceding character or group.
+
 "{n,}" - matches n or more occurrences of the preceding character or group.
+
 "{n,m}" - matches between n and m occurrences of the preceding character or group.
+
 Here's an example that uses the + quantifier to match one or more occurrences of the letter 'a':
 const str = "banana";
 const pattern = /a+/;

@@ -16,6 +16,7 @@ So, putting it all together, this regular expression matches an email address wi
 # Table of Contents
 
 - [Anchors](#Anchors)
+- <a href="#Anchors">Jump to Section 1</a>
 
 - [Quantifiers](#Quantifiers)
 
@@ -38,7 +39,7 @@ So, putting it all together, this regular expression matches an email address wi
 - [Look-ahead and Look-behind](#Look-ahead-and-Look-behind)
 
 
-Anchors
+<a href="Anchors">Anchors</a>
 
 Anchors in regex are characters that represent a specific position in the input string, rather than a specific character or sequence of characters. Anchors are used to match patterns at specific positions in the input string, such as the beginning or end of the string.
 The caret ^ is used as an "anchor" to match the beginning and end of a string.

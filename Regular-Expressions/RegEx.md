@@ -15,28 +15,27 @@ So, putting it all together, this regular expression matches an email address wi
 
 # Table of Contents
 
-- [Anchors](#Anchors)
-- <a href="#Anchors">Jump to Section 1</a>
+- <a href="#Anchors">Anchors</a>
 
-- [Quantifiers](#Quantifiers)
+- <a href="#Quantifiers">Quantifiers</a>
 
-- [OR Operator](#OR-Operator)
+- <a href="#OR-Operator">OR Operator</a>
 
-- [Character Classes](#Character-Classes)
+- <a href="#Character-Classes">Character-Classes</a>
 
-- [Flags](#Flags)
+- <a href="#Flags">Flags</a>
 
-- [Grouping and Capturing](#Grouping-and-Capturing)
+- <a href="#Grouping-and-Capturing">Grouping and Capturing</a>
 
-- [Bracket Expressions](#Bracket-Expressions)
+- <a href="#Bracket-Expressions">Bracket-Expressions</a>
 
-- [Greedy and Lazy Match](#Greedy-and-Lazy-Match)
+- <a href="#Greedy-and-Lazy-Match">Greedy-and-Lazy-Match</a>
 
-- [Boundaries](#Boundaries)
+- <a href="#Boundaries">Boundaries</a>
 
-- [SBack-references](#Back-references)
+<a href="#Back-references">Back-references</a>
 
-- [Look-ahead and Look-behind](#Look-ahead-and-Look-behind)
+<a href="#Look-ahead-and-Look-behind">Look-ahead and Look-behind</a>
 
 
 <a id="Anchors">Anchors</a>

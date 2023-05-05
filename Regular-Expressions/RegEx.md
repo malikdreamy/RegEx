@@ -54,7 +54,7 @@ const pattern = /world$/;
 const result = pattern.test(str);
 console.log(result); // true
 
-#Quantifies
+<a id="Quantifiers">Quantifiers</a>
 
 Quantifiers are used to specify the number of times a character or a group of characters should be matched. There are several types of quantifiers in regex:
 * - matches zero or more occurrences of the preceding character or group.
@@ -70,7 +70,7 @@ const result = pattern.test(str);
 console.log(result); // true
 The + quantifier is used to match one or more occurrences of the letter 'a'. So, the regex pattern /a+/ will match any string that has one or more 'a' characters in a row. In the given string, "banana" has two 'a' characters in a row, so the test() method returns true.
 
-#OR operator
+<a id="OR-operator">OR operator</a>
 
 The | (pipe) symbol is used as the "or" operator, which means it matches either the expression on its left or the expression on its right.
 For example, the regular expression /cat|dog/ matches either the string "cat" or the string "dog".
@@ -83,7 +83,7 @@ console.log(pattern.test(str2)); // true
 console.log(pattern.test(str3)); // false
 The | symbol separates the two options that can match the pattern, and either one can be a valid match.
 
-#Character Classes
+<a id="Character-Classes">Character Classes</a>
 
 A character class is a way to match a single character from a set of characters. Character classes are in square brackets [] and match any single character within the brackets.
 Some examples are:
@@ -98,7 +98,7 @@ const matches = str.match(pattern);
 console.log(matches); // ["e", "u", "i", "o", "o", "u", "o", "e", "a", "o"]
 It is worth noting that we are using the global flag g to return all the charachters. Otherwise if we removed the flag and just used /[aeiou]/; it would only return ["e"] which is the first character match in the string.
 
-#Flags
+<a id="Flags">Flags</a>
 
 flags are optional parameters that modify how the regular expression behaves when it matches a string. They are indicated by a letter immediately following the closing slash of the regular expression.
 g (global): matches all occurrences of the pattern, not just the first one.
@@ -110,7 +110,7 @@ const matches = str.match(pattern);
 console.log(matches); // ["hello", "hello"]
 In this example, the regular expression /hello/g matches the string "hello" twice, but because we included the g flag, the match() method returns an array with both matches.
 
-#Grouping and Capturing
+<a id="Grouping-and-Capturing">Grouping and Capturing</a>
 
 Grouping refers to the ability to group together multiple characters in a regular expression. This is done using parentheses. For example, the regular expression (cat|dog) matches either "cat" or "dog", because the pattern is enclosed in a group separated by the | (or) operator.
 Capturing refers to the ability to extract or "capture" a portion of the matched text from a regular expression. This is done by enclosing the subpattern to be captured in parentheses. For example, the regular expression /(Hello), (world)!/ captures the words "Hello" and "world" in two separate capturing groups.
@@ -120,12 +120,12 @@ const matches = str.match(pattern);
 console.log(matches); // ["fox", "dog"]
 
 
-#Bracket expressions
+<a id="Bracket-Expression">Bracket Expression</a>
 
 Bracket expressions also known as character classes, are a way to match any single character from a specific set of characters in a regular expression.
 For example, the regular expression [abc] matches any single character that is either "a", "b", or "c". Similarly, the regular expression [0-9] matches any single digit from 0 to 9.
 
-#Greedy and Lazy Matching
+<a id="Greedy-and-Lazy-Loading">Greedy and Lazy Loading</a>
 
 Greedy and lazy matching are two concepts in regular expressions that describe how patterns match text.
 Greedy matching means that a pattern will match as much of the string as possible while still allowing the overall pattern to match. For example, the regular expression .* matches any sequence of characters, as many as possible, until the string or until the next part of the pattern matches.
@@ -140,7 +140,7 @@ In this example, the input string is "abbcbbc". The greedy pattern /a.*c/ matche
 
 However, the lazy pattern /a.*?c/ matches the shortest possible sequence of characters that starts with "a" and ends with "c". In this case, that sequence is "ab", because the .*? quantifier is lazy and matches as few characters as possible. Therefore, the match result is ["abbc"].
 
-#Boundaries 
+<a id="Boundaries">Boundaries</a>
 
 Boundaries in regular expressions are used to define specific positions in a string, such as the beginning or end of a line, word, or sentence. Boundaries can be used to specify where a match should start or end, or to ensure that certain characters or sequences are not part of a match.
 Here are common boundary symbols used in regular expressions:
@@ -155,7 +155,7 @@ world$: Matches any string that ends with "world".
 \bthe\b: Matches the word "the" only if it appears as a separate word, and not as part of another word for example ("theater" or "theme").
 \Bee\B: Matches the string "ee" only if it is not surrounded by word characters for example ("seen" or "beef").
 
-#Back-references
+<a id="Back-References">Back References</a>
 
 Back-references in regex allow you to refer to a previously matched group in your pattern.
 Suppose you have a string that contains two repeated words separated by a space, like this: "hello hello". You can use a regular expression with a back-reference to match this pattern:
@@ -163,7 +163,7 @@ Suppose you have a string that contains two repeated words separated by a space,
 In this pattern, (\w+) is a capturing group that matches one or more word characters. The parentheses capture the matched word into a group. The \s matches a whitespace character, and the \1 back-reference matches whatever was captured by the first group, i.e., the repeated word.
 So, when you apply this regular expression to the string "hello hello", it will match the entire string. But if you apply it to the string "hello world", it won't match anything, because there are no repeated words.
 
-#Look-ahead and Look-behind
+<a id="Look-ahead-and-Look-behind">Look-ahead and Look-behind</a>
 
 Look-ahead and look-behind in regex are used to match a pattern based on the presence or absence of another pattern before or after it, without including the additional pattern in the match.
 For example, suppose you have a string of text that contains a series of email addresses, and you want to extract only the domain names (the part after the @ symbol) but without including the @ symbol itself. You can use a look-behind assertion to match the @ symbol without including it in the actual match: /(?<=@)\w+\.\w+/g
